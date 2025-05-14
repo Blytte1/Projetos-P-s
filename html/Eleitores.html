@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleitores</title>
+    <script>
+        const anoVotação = Number(prompt("Digite o ano da eleição:"));
+        const anoNascimento = Number(prompt("Digite o ano de nascimento:"));
+        const idade = anoVotação - anoNascimento;
+        const idadeMinima = 16;
+        const idadeMaxima = 70;
+        const podeVotar = idade >= idadeMinima && idade <= idadeMaxima;
+        const mensagem = podeVotar ? "Você pode votar!" : "Você não pode votar!";
+        const mensagemIdade = podeVotar ? `Você tem ${idade} anos e está apto a votar.` : `Você tem ${idade} anos e não está apto a votar.`;
+   
+        if (podeVotar) {
+            alert("Você pode votar!");
+        } else {
+            alert("Você não pode votar!");
+        };
+       
+        document.write("<h1>Eleitores</h1>");
+        document.write("<h1>" + mensagemIdade + "</h1>");
+        document.write("<h3>Idade mínima para votar: " + idadeMinima + " anos</h3>");
+        document.write("<h3>Idade máxima para votar: " + idadeMaxima + " anos</h3>");
+        document.write("<h3>Idade do eleitor: " + idade + " anos</h3>");
+        document.write("<h3>Resultado: " + mensagem + "</h3>");
+        document.write("<h3>Você " + (podeVotar ? "pode" : "não pode") + " votar.</h3>");
+        document.write("<h3>Mensagem: " + mensagem + "</h3>");
+        document.write("<h3>Mensagem de idade: " + mensagemIdade + "</h3>");
+        document.write("<h3>Mensagem de idade mínima: " + idadeMinima + " anos</h3>");
+        document.write("<h3>Mensagem de idade máxima: " + idadeMaxima + " anos</h3>");
+        document.write("<h3>Mensagem de idade do eleitor: " + idade + " anos</h3>");
+       
+        document.writeln("Linha 1\n");
+        document.write("Olá mundo");
+   
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

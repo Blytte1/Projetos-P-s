@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+   
+ 
+ <title>Somando elementos no html</title>
+   
+    <script>
+      function somar() {
+       const n1 = document.getElementById('n1').value
+       const n2 =  document.getElementById('n2').value 
+       const soma = Number(n1)+Number(n2)
+        console.log("A soma dos numeros é: " + soma)
+        const resultado = document.getElementById('resultado')
+        resultado.innerHTML = "A soma dos numeros é: " + soma
+      }
+      function subtrair() {
+       const n1 = document.getElementById('n1').value
+       const n2 =  document.getElementById('n2').value 
+       const subtrair = Number(n1) - Number(n2)
+        console.log("A subtração dos numeros é: " + subtrair)
+        const resultado = document.getElementById('resultado')
+        resultado.innerHTML = "A subtração dos numeros é: " + subtrair
+      }
+      function multiplicar() {
+       const n1 = document.getElementById('n1').value
+       const n2 =  document.getElementById('n2').value 
+       const multiplicar = Number(n1)*Number(n2)
+        console.log("A multiplicação dos numeros é: " + multiplicar)
+        const resultado = document.getElementById('resultado')
+        resultado.innerHTML = "A multiplicação dos numeros é: " + multiplicar
+      }
+      function dividir() {
+       const n1 = document.getElementById('n1').value
+       const n2 =  document.getElementById('n2').value 
+       const dividir = Number(n1)/Number(n2)
+        console.log("A divisão dos numeros é: " + dividir)
+        const resultado = document.getElementById('resultado')
+        resultado.innerHTML = "A divisão dos numeros é: " + dividir
+      }
+      function modulo() {
+       const n1 = document.getElementById('n1').value
+       const n2 =  document.getElementById('n2').value 
+       const modulo = Number(n1)%Number(n2)
+        console.log("O módulo dos numeros é: " + modulo)
+        const resultado = document.getElementById('resultado')
+        resultado.innerHTML = "O módulo dos numeros é: " + modulo
+      }
+    </script>
+</head>
+<body>
+    <form action="">
+        N1: <input type = "text" id = "n1"><br>
+        <br>
+        N2: <input type = "text" id = "n2"><br>
+        <br>
+        <input type="button" value="Somar", onclick="somar()">
+
+<input type="button" value="Subtrair", onclick="subtrair()">
+<input type="button" value="multiplicar", onclick="multiplicar()">
+<input type="button" value="dividir", onclick="dividir()">
+<input type="button" value="Moódulo ", onclick="modulo()">
+<h1 id="resultado"></h1>
+
+    </form>
+</body>
+</html>

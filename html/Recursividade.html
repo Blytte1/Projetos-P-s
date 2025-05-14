@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursividade</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        h1 {
+            color: red;
+        }
+    </style>
+    <script>
+        function fatorial(x) {
+            if (x < 1){
+                return 1;
+            } else {
+                return x * fatorial(x - 1);
+            }
+        }
+        console.log(fatorial(5)); // vai imprimir 120, é recursivo pq faz um loop até x ser menor que 1
+        // bem perigosinha essa função, se não colocar o if ela vai ficar chamando a função até estourar a memória
+        // o que é recursão? é uma função que chama ela mesma, e isso pode ser perigoso se não tiver um ponto de parada
+        // o ponto de parada é o if que verifica se x é menor que 1, se for ele retorna 1 e para a função
+        function calcularFatorial() {
+            const x = document.getElementById('x').value;
+            const resultado = fatorial(x);
+            document.getElementById('resultado').innerHTML = "O fatorial de " + x + " é: " + resultado;
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        X: <input type="number" id="x" required> 
+        <br><br>
+        <input type="button" value="resultado" onclick="calcularFatorial()">
+        <h1 id="resultado"></h1>
+    </form>
+</body>
+</html>

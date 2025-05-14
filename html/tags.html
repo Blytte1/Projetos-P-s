@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossário de HTML5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Glossário de HTML5</h1>
+
+    <h2>1. &lt;div&gt;</h2>
+    <p><strong>Descrição:</strong> Um contêiner genérico para agrupar elementos.</p>
+    <pre>&lt;div class="container"&gt;
+    &lt;h1&gt;Bem-vindo ao meu site!&lt;/h1&gt;
+&lt;/div&gt;</pre>
+
+    <h2>2. &lt;p&gt;</h2>
+    <p><strong>Descrição:</strong> Define um parágrafo.</p>
+    <pre>&lt;p&gt;Este é um parágrafo de texto.&lt;/p&gt;</pre>
+
+    <h2>3. &lt;a&gt;</h2>
+    <p><strong>Descrição:</strong> Define um hyperlink.</p>
+    <pre>&lt;a href="https://www.exemplo.com"&gt;Visite nosso site!&lt;/a&gt;</pre>
+
+    <h2>4. &lt;img&gt;</h2>
+    <p><strong>Descrição:</strong> Insere uma imagem.</p>
+    <pre>&lt;img src="imagem.jpg" alt="Descrição da imagem"&gt;</pre>
+
+    <h2>5. &lt;h1&gt; a &lt;h6&gt;</h2>
+    <p><strong>Descrição:</strong> Define cabeçalhos, de &lt;h1&gt; (mais importante) a &lt;h6&gt; (menos importante).</p>
+    <pre>&lt;h1&gt;Título Principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;</pre>
+
+    <h2>6. &lt;ul&gt; e &lt;ol&gt;</h2>
+    <p><strong>Descrição:</strong> Define listas não ordenadas (&lt;ul&gt;) e ordenadas (&lt;ol&gt;).</p>
+    <pre>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Primeiro item&lt;/li&gt;
+    &lt;li&gt;Segundo item&lt;/li&gt;
+&lt;/ol&gt;</pre>
+
+    <h2>7. &lt;li&gt;</h2>
+    <p><strong>Descrição:</strong> Define um item de lista.</p>
+    <pre>&lt;li&gt;Item de lista&lt;/li&gt;</pre>
+
+    <h2>8. &lt;table&gt;</h2>
+    <p><strong>Descrição:</strong> Define uma tabela.</p>
+    <pre>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nome&lt;/th&gt;
+        &lt;th&gt;Idade&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;João&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</pre>
+
+    <h2>9. &lt;form&gt;</h2>
+    <p><strong>Descrição:</strong> Define um formulário para entrada de dados.</p>
+    <pre>&lt;form action="/submit" method="post"&gt;
+    &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+    &lt;input type="text" id="nome" name="nome"&gt;
+    &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;</pre>
+
+    <h2>10. &lt;input&gt;</h2>
+    <p><strong>Descrição:</strong> Define um campo de entrada.</p>
+    <pre>&lt;input type="text" placeholder="Digite seu nome"&gt;</pre>
+
+    <h2>11. &lt;button&gt;</h2>
+    <p><strong>Descrição:</strong> Define um botão clicável.</p>
+    <pre>&lt;button type="button"&gt;Clique aqui&lt;/button&gt;</pre>
+
+    <h2>12. &lt;span&gt;</h2>
+    <p><strong>Descrição:</strong> Um contêiner genérico para texto em linha.</p>
+    <pre>&lt;span class="destaque"&gt;Texto destacado&lt;/span&gt;</pre>
+
+    <h2>13. &lt;section&gt;</h2>
+    <p><strong>Descrição:</strong> Define uma seção em um documento.</p>
+    <pre>&lt;section&gt;
+    &lt;h2&gt;Seção 1&lt;/h2&gt;
+    &lt;p&gt;Conteúdo da seção 1.&lt;/p&gt;
+&lt;/section&gt;</pre>
+
+    <h2>14. &lt;article&gt;</h2>
+    <p><strong>Descrição:</strong> Define um conteúdo independente que pode ser distribuído.</p>
+    <pre>&lt;article&gt;
+    &lt;h2&gt;Título do Artigo&lt;/h2&gt;
+    &lt;p&gt;Conteúdo do artigo.&lt;/p&gt;
+&lt;/article&gt;</pre>
+
+    <h2>15. &lt;footer&gt;</h2>
+    <p><strong>Descrição:</strong> Define o rodapé de um documento ou seção.</p>
+    <pre>&lt;footer&gt;
+    &lt;p&gt;© 2023 Meu Site&lt;/p&gt;
+&lt;/footer&gt;</pre>
+
+    <h2>16. &lt;header&gt;</h2>
+    <p><strong>Descrição:</strong> Define o cabeçalho de um documento ou seção.</p>
+    <pre>&lt;header&gt;
+    &lt;h1&gt;Meu Site&lt;/h1&gt;
+&lt;/header&gt;</pre>
+
+    <h2>17. &lt;nav&gt;</h2>
+    <p><strong>Descrição:</strong> Define uma seção de navegação.</p>
+    <pre>&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#sobre"&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</pre>
+
+    <h2>18. &lt;aside&gt;</h2>
+    <p><strong>Descrição:</strong> Define conteúdo relacionado, mas não essencial.</p>
+    <pre>&lt;aside&gt;
+    &lt;h2&gt;Links Relacionados&lt;/h2&gt;
+    &lt;p&gt;Conteúdo adicional.&lt;/p&gt;
+&lt;/aside&gt;</pre>
+
+    <h2>19. &lt;main&gt;</h2>
+    <p><strong>Descrição:</strong> Define o conteúdo principal do documento.</p>
+    <pre>&lt;main&gt;
+    &lt;h2&gt;Conteúdo Principal&lt;/h2&gt;
+    &lt;p&gt;Este é o conteúdo principal da página.&lt;/p&gt;
+&lt;/main&gt;</pre>
+
+    <h2>20. &lt;canvas&gt;</h2>
+    <p><strong>Descrição:</strong> Define uma área de desenho.</p>
+    <pre>&lt;canvas id="meuCanvas" width="200" height="100" style="border:1px solid #000000;"&gt;&lt;/canvas&gt;</pre>
+
+    <h2>21. &lt;video&gt;</h2>
+    <p><strong>Descrição:</strong> Define um vídeo.</p>
+    <pre>&lt;video width="320" height="240" controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Seu navegador não suporta o elemento de vídeo.
+&lt;/video&gt;</pre>
+
+    <h2>22. &lt;audio&gt;</h2>
+    <p><strong>Descrição:</strong> Define um conteúdo de áudio.</p>
+    <pre>&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    Seu navegador não suporta o elemento de áudio.
+&lt;/audio&gt;</pre>
+
+    <h2>23. &lt;iframe&gt;</h2>
+    <p><strong>Descrição:</strong> Define um quadro embutido.</p>
+    <pre>&lt;iframe src="https://www.exemplo.com" width="300" height="200"&gt;&lt;/iframe&gt;</pre>
+
+    <h2>24. &lt;blockquote&gt;</h2>
+    <p><strong>Descrição:</strong> Define uma citação em bloco.</p>
+    <pre>&lt;blockquote&gt;
+    &lt;p&gt;Esta é uma citação famosa.&lt;/p&gt;
+&lt;/blockquote&gt;</pre>
+
+    <h2>25. &lt;cite&gt;</h2>
+    <p><strong>Descrição:</strong> Define o título de uma obra.</p>
+    <pre>&lt;cite&gt;O Senhor dos Anéis&lt;/cite&gt;</pre>
+
+</body>
+</html>

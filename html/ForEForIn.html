@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+/*
+for
+
+Loop de propósito geral: Usado para iterar sobre uma sequência de valores, geralmente em arrays ou strings, com controle preciso sobre o índice.
+
+      for (inicialização; condição; incremento) {
+   Código a ser executado em cada iteração
+}*/
+let numeros = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < numeros.length; i++) {
+  console.log("número: "+numeros[i]);
+}
+// Saída: 1 2 3 4 5
+let palavra = "Olá";
+
+for (let i = 0; i < palavra.length; i++) {
+  console.log("letra: " + palavra[i]);
+}
+/*
+For of
+for (let elemento of iterável) {
+  // Código a ser executado para cada elemento
+}
+*/
+ palavra = "Olá";
+
+for (let letra of palavra) {
+  console.log(letra);
+}
+// Saída: O l á
+/*
+for...in
+
+Loop para objetos: Usado para iterar sobre as propriedades enumeráveis de um objeto.
+
+for (let propriedade in objeto) {
+  // Código a ser executado para cada propriedade
+}
+
+*/
+let pessoa = {
+  nome: "Maria",
+  idade: 30,
+  cidade: "São Paulo"
+};
+
+for (let chave in pessoa) {
+  console.log(chave + ": " + pessoa[chave]);
+}
+
+
+    </Script>
+</body>
+</html>

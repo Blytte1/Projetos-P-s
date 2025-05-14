@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo Form e JS</title>
+  <style>
+    /* ====== CSS ====== */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 2rem;
+    }
+    form {
+      background: #1ca067;
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      box-sizing: border-box;
+    }
+    .inline {
+      display: inline-block;
+      margin-right: 1rem;
+      font-weight: normal;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.5rem 1rem;
+      background: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    #result {
+      max-width: 400px;
+      margin: 2rem auto 0;
+      background: #fff;
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align:center;">Formulário de Exemplo</h1>
+
+  <!-- ====== HTML ====== -->
+  <form id="meuForm">
+    <label for="nome">Nome:</label>
+    <input id="nome"  name="nome"  type="text" required>
+
+    <label for="email">Email:</label>
+    <input id="email" name="email" type="email" required>
+
+    <label>Gênero:</label>
+    <span class="inline">
+      <input type="radio" name="genero" value="Masculino" checked> Masculino
+    </span>
+    <span class="inline">
+      <input type="radio" name="genero" value="Feminino"> Feminino
+    </span>
+
+    <label>Interesses:</label>
+    <span class="inline">
+      <input type="checkbox" name="interesse" value="JavaScript"> JavaScript
+    </span>
+    <span class="inline">
+      <input type="checkbox" name="interesse" value="HTML"> HTML
+    </span>
+    <span class="inline">
+      <input type="checkbox" name="interesse" value="CSS"> CSS
+    </span>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    // ====== JavaScript ======
+    const form = document.getElementById('meuForm');
+    const resultDiv = document.getElementById('result');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // evita o envio tradicional
+
+      // 1) Inputs de texto/email
+      const nome  = this.nome.value;   // equivalente a document.getElementById('nome').value
+      const email = this.email.value;
+
+
+      // 2) Radio (usando querySelector de quem estiver checked)
+      const genero = document.querySelector('input[name="genero"]:checked').value;
+
+      // 3) Checkboxes (vários valores)
+      const checkeds = document.querySelectorAll('input[name="interesse"]:checked');
+      const interesses = Array.from(checkeds).map(chk => chk.value);
+
+      // 4) Monta um HTML de saída e insere no div#result
+      resultDiv.innerHTML = `
+        <h2>Dados Enviados</h2>
+        <p><strong>Nome:</strong> ${nome}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Gênero:</strong> ${genero}</p>
+        <p><strong>Interesses:</strong> ${interesses.join(', ') || 'Nenhum selecionado'}</p>
+      `;
+    });
+  </script>
+
+</body>
+</html>
