@@ -70,8 +70,6 @@ document.getElementById("coluna").value = "";
 }
 
 function checar() {
-   
-
     // Função para verificar se três valores são iguais e não vazios
     function verificaTresIguais(a, b, c) {
         return a === b && b === c && a !== "";
