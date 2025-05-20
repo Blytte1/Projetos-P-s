@@ -1,0 +1,164 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Online Shop</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Online Shop</title>
+  </head>
+  <body class="container-sm">
+    <h1 class="bi-cart-check">Loja Dev</h1>
+    <br>
+    <br>
+    <table class="table table-hover align-middle table-dark">       
+      <thead>
+        <tr class="table-light">
+          <th>Imagem</th>
+          <th>Produto</th>
+          <th>Preço</th>
+          <th>Quantidade</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <img src="../img/produto1.webp" class="rounded mx-auto d-block" alt="Samsung Watch Serie 6">
+          </td>
+          <td>
+            <span id="product1">
+              Samsung Watch Serie 6
+            </span> 
+            <br>
+            <span class="productItem">
+              Código: 
+                <span id="code1">
+                35344
+                </span>
+            </span>
+            <br>
+            <span class="productItem">
+              Cor: 
+              <span id="p1Color">
+                Preta
+              </span>
+            </span>
+            <br>
+          </td>
+          <td id="value1">
+            R$ 6650,95
+          </td>
+          <td>
+            <span class="badge bg-danger" onclick="setQuantity(1, '-')">
+              <i class="bi bi-dash"></i>
+            </span> 
+            <span id="quantity1">0</span>
+            <span class="badge bg-success" onclick="setQuantity(1, '+')">
+              <i class="bi bi-plus"></i>
+            </span>
+          </td>
+          <td >
+           <span id="totalValue1">R$ 0,00</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="../img/produto2.webp" class="rounded mx-auto d-block" alt="Samsung Watch Serie 6">
+          </td>
+          <td>
+            <span id="product2">
+              Alexa Echo Dot
+            </span> 
+            <br>
+            <span class="productItem">
+              Código: 
+                <span id="code2">
+                35346
+                </span>
+            </span>
+            <br>
+            <span class="productItem">
+              Cor: 
+              <span id="p2Color">
+                Preta
+              </span>
+            </span>
+            <br>
+          </td>
+          <td id="value2">
+            R$ 650,00
+          </td>
+          <td  >
+            <span class="badge bg-danger" onclick="setQuantity(2, '-')">
+              <i class="bi bi-dash"></i>
+            </span> 
+            <span id="quantity2">0</span>
+            <span class="badge bg-success" onclick="setQuantity(2, '+')">
+              <i class="bi bi-plus"></i>
+            </span>
+          </td>
+          <td id="totalValue2">
+            R$ 0,00
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="../img/produto3.webp" class="rounded mx-auto d-block" alt="Samsung Watch Serie 6">
+          </td>
+          <td>
+            <span id="product3">
+              ASUS - ROG Ally
+            </span> 
+            <br>
+            <span class="productItem">
+              Código: 
+                <span id="code3">
+                35389
+                </span>
+            </span>
+            <br>
+            <span class="productItem">
+              Cor: 
+              <span id="p3Color">
+                Preta
+              </span>
+            </span>
+            <br>
+          </td>
+          <td id="value3">
+           R$ 8650,00
+          </td>
+          <td>
+            <span class="badge bg-danger" onclick="setQuantity(3, '-')">
+              <i class="bi bi-dash"></i>
+            </span> 
+            <span id="quantity3">0</span>
+            <span class="badge bg-success" onclick="setQuantity(3, '+')">
+              <i class="bi bi-plus"></i>
+            </span>
+          </td>
+          <td id="totalValue3">
+            R$ 0,00
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <footer>
+        <span id="totalSum" class="bi-cart"> R$ 0,00</span>
+      
+      <br><br>
+      <p>Blytte© 2025 Loja Dev. All rights reserved to Roberto Mascarenhas.</p>
+      <p>Contact us: blytte@gmail.com</p>
+    </footer>
+    <script src="../JavaScript/script.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,35 @@
+h1{
+    color: white;
+    font-size: 5em;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    border: 5px dotted rgb(51, 105, 105) ;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+#totalSum {
+    color: white;
+    font-size: 2em;
+    text-align: right; /* Alinha o texto à direita */
+    padding: 5px; /* Padding interno */
+    float: right; /* Faz o elemento flutuar à direita */
+    background-color: rgb(51, 105, 105);
+    opacity: 0.7; /* Opacidade do fundo */
+    
+}
+
+.productItem{
+    color: #662a2a;
+    font-weight: bold;
+}
+
+footer {
+    background-color: black; /* Cor de fundo do rodapé */
+    position: relative; /* Para garantir que o rodapé fique na posição correta */
+    text-align: center; /* Centraliza o texto no rodapé */
+}

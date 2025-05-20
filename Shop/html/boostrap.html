@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootstrapExamples</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+</head>
+<body class="container-sm">
+   
+    <h1>BootStrap exemplos</h1>
+    <br>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Botões de Ação
+            </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <h2>Botões</h2>
+                <input type="button" class="btn btn-primary" value="primary" onclick="alert('Olá, mundo!')">
+                <input type="button" class="btn btn-danger" value="danger" onclick="alert('Olá, mundo!')">
+                <input type="button" class="btn btn-success" value="sucess" onclick="alert('Olá, mundo!')">
+                <input type="button" class="btn btn-warning" value="warning" onclick="alert('Olá, mundo!')">
+                <input type="button" class="btn btn-info" value="info" onclick="alert('Olá, mundo!')">
+                
+                <input type="button" class="btn btn-light" value="light" onclick="alert('Olá, mundo!')">
+                <input type="button" class="btn btn-dark" value="dark" onclick="alert('Olá, mundo!')">
+                <input type="button" class="btn btn-link" value="link" onclick="alert('Olá, mundo!')">
+                <br><br>
+                <input type="button" class="btn btn-secondary" value="secondary" onclick="alert('Olá, mundo!')">
+                <input type="button" class="btn btn-outline-primary" value="outline-primary" onclick="alert('Olá, mundo!')">
+                <input type="button" class="btn btn-outline-danger" value="outline-danger" onclick="alert('Olá, mundo!')">
+                <input type="button" class="btn btn-outline-success" value="btn-outline-success" onclick="alert('Olá, mundo!')">
+                <input type="button" class="btn btn-outline-warning" value="outline-warning" onclick="alert('Olá, mundo!')">
+                <input type="button" class="btn btn-outline-info" value="-outline-info" onclick="alert('Olá, mundo!')">        </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Alertas
+            </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="alert alert-primary" role="alert">
+                    A simple primary alert—check it out!
+                    </div>
+                    <div class="alert alert-secondary" role="alert">
+                    A simple secondary alert—check it out!
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                    A simple success alert—check it out!
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                    A simple danger alert—check it out!
+                    </div>
+                    <div class="alert alert-warning" role="alert">
+                    A simple warning alert—check it out!
+                    </div>
+                    <div class="alert alert-info" role="alert">
+                    A simple info alert—check it out!
+                    </div>
+                    <div class="alert alert-light" role="alert">
+                    A simple light alert—check it out!
+                    </div>
+                    <div class="alert alert-dark" role="alert">
+                    A simple dark alert—check it out!
+                    </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Tabelas
+            </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <h2>table</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">3</th>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>@social</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <br>
+                    <!-- On tables -->
+
+                    <br>
+                    <h2> table table-dark table-hover</h2>
+                    <table class="table table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>@social</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <h2> table table-primary table-striped table-hover</h2>
+                    <table class="table table-primary table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>@social</td>
+                        </tr>
+                        </tbody>
+                    </table>
+            </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                Cartões
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="container">
+                <div class="accordion-body ">
+                <h4>Cartões</h4>
+                <div class="card" style="width: 20rem;">
+                    <img src="../Exemplos de aula/img/logo.png" class="card-img-middle" alt="Html5">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML5</h5>
+                        <p class="card-text">Usando elementos de Html5 com Bootstrap no css!</p>
+                        <a href="https://html5up.net/" class="btn btn-primary">Vá para a página</a>
+                    </div>
+                    </div>
+                        </div>
+                        <div class="card">
+                        <div class="card-header">
+                            Featured
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                        </div>
+                        <br>
+                        <div class="card" style="width: 18rem;">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_790290-MLB83036996591_032025-F-rede-descanso-dormir-nylon-casal-colorida-resistente-camping.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">An item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                Grids
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <h2>Grid</h2>
+                    <div class="containter text-center">
+                        <div class="row">
+                            <div class="col">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_790290-MLB83036996591_032025-F-rede-descanso-dormir-nylon-casal-colorida-resistente-camping.webp" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">Card link</a>
+                                            <a href="#" class="card-link">Another link</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                            
+                            <div class="col">
+                                    <div class="card" style="width: 20rem;">
+                                        <img src="../Exemplos de aula/img/logo.png" class="card-img-middle" alt="Html5">
+                                        <div class="card-body">
+                                        <h5 class="card-title">HTML5</h5>
+                                        <p class="card-text">Usando elementos de Html5 com Bootstrap no css!</p>
+                                        <a href="https://html5up.net/" class="btn btn-primary">Vá para a página</a>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 20rem;">
+                                    <img src="../Exemplos de aula/img/logo.png" class="card-img-middle" alt="Html5">
+                                    <div class="card-body">
+                                    <h5 class="card-title">HTML5</h5>
+                                    <p class="card-text">Usando elementos de Html5 com Bootstrap no css!</p>
+                                    <a href="https://html5up.net/" class="btn btn-primary">Vá para a página</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>Copyright &copy; 2025 Online Shop. All rights reserved to Roberto Mascarenhas.</p>
+    <p>Contact us:
+</html>
